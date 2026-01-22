@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TaskMaster Professional</title>
+    <meta name="description" content="Manage your tasks efficiently with TaskMaster. Professional task management for students and freelancers.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <span class="text-gold">Task</span>Master
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Dashboard</a>
+                <a href="tasks.html" class="nav-link">My Tasks</a>
+                <a href="categories.html" class="nav-link">Categories</a>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </nav>
+
+        <main class="main-wrapper">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Quick Overview</h3>
+                    <ul class="sidebar-menu">
+                        <li><a href="index.html" class="active">📊 Dashboard</a></li>
+                        <li><a href="tasks.html?filter=today">📅 Today's Tasks</a></li>
+                        <li><a href="tasks.html?filter=upcoming">🔮 Upcoming</a></li>
+                        <li><a href="tasks.html?filter=completed">✅ Completed</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Categories</h3>
+                    <ul class="sidebar-menu">
+                        <li><a href="tasks.html?cat=work">💼 Work</a></li>
+                        <li><a href="tasks.html?cat=personal">👤 Personal</a></li>
+                        <li><a href="tasks.html?cat=study">📚 Study</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="content-area">
+                <header class="page-header">
+                    <div class="page-title">
+                        <h1>Dashboard</h1>
+                        <p class="page-subtitle">Welcome back! Here's your productivity overview.</p>
+                    </div>
+                    <a href="tasks.html" class="btn btn-primary">
+                        <span>+</span> New Task
+                    </a>
+                </header>
+
+                <!-- Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" id="statTotal">0</div>
+                        <div class="stat-label">Total Tasks</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number text-gold" id="statPending">0</div>
+                        <div class="stat-label">Pending</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" style="color: var(--accent-green)" id="statCompleted">0</div>
+                        <div class="stat-label">Completed</div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity / CTA -->
+                <div class="sidebar-section" style="text-align: center; padding: 3rem;">
+                    <h2 style="margin-bottom: 1rem;">Stay Organized & focused</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+                        Start managing your daily assignments and projects with ease. Categorize, prioritize, and track your progress.
+                    </p>
+                    <a href="tasks.html" class="btn btn-primary">Go to My Tasks</a>
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 TaskMaster. All rights reserved.</p>
+            <div style="margin-top: 10px;">
+                <a href="about.html">About</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

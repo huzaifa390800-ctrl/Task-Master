@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - TaskMaster Professional</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+        <style>
+            .main-wrapper {
+  padding: 16px;
+}
+
+.content-area {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header */
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  word-wrap: break-word;
+}
+
+.page-subtitle {
+  font-size: clamp(1rem, 3.5vw, 1.2rem);
+  color: var(--text-muted);
+}
+
+/* Sections */
+.sidebar-section {
+  margin-bottom: 2rem;
+}
+
+.task-title {
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+}
+
+.sidebar-section p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+/* Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Footer */
+.footer-text {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Extra safety for very small screens */
+@media (max-width: 480px) {
+  .main-wrapper {
+    padding: 12px;
+  }
+}
+
+        </style>
+</head>
+
+<body>
+
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="text-gold">Task</span>Master
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Dashboard</a>
+                <a href="tasks.html" class="nav-link">My Tasks</a>
+                <a href="categories.html" class="nav-link">Categories</a>
+                <a href="about.html" class="nav-link active">About</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </nav>
+
+        <main class="main-wrapper">
+  <div class="content-area">
+    <header class="page-header">
+      <h1>About TaskMaster</h1>
+      <p class="page-subtitle">The ultimate productivity tool for professionals.</p>
+    </header>
+
+    <div class="sidebar-section">
+      <h2 class="task-title">Our Mission</h2>
+      <p>
+        TaskMaster is designed to help students, freelancers, and professionals organize their daily
+        lives with efficiency and style. Built with a focus on usability and aesthetics.
+      </p>
+      <p>
+        Launched in 2026, we are committed to providing a clean, distraction-free environment.
+      </p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Contact Us</h3>
+        <p>Email: support@taskmaster.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+      </div>
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Privacy Policy</h3>
+        <p>We value your privacy. All your data is stored locally on your device.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+    </div>
+
+    <!-- Hidden elements for JS compatibility -->
+    <div style="display:none;">
+        <span id="statTotal"></span><span id="statPending"></span><span id="statCompleted"></span>
+    </div>
+    
+ <footer class="footer">
+            <p>&copy; 2026 TaskMaster. All rights reserved.</p>
+            <div style="margin-top: 10px;">
+                <a href="about.html">About</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms</a>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
